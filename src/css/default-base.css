@@ -1,0 +1,22 @@
+:root {
+    --color-canvas-background: #D5E1EF;
+    --color-main-hue: #2B7DF9;
+    --color-text-fade: #979797;
+    --padding-normal: 10px;
+}
+
+
+* {
+    font-family: Montserrat, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-canvas-background);
+    height: 100vh;
+    width: 100vw;
+}

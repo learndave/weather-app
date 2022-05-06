@@ -1,0 +1,108 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    color: rgb(84, 84, 100);
+    padding: 10;
+}
+
+input:focus + label {
+    align-self: flex-start;
+    font-size: 12px;
+    left: 20px;
+    background-color: white;
+    padding: 0 5px;
+
+    transition: 100ms;
+}
+
+input:not(:placeholder-shown) ~ label {
+    display: none;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button {
+    width: fit-content;
+    align-self: center;
+    transition: filter 200ms;
+}
+
+button:hover {
+    filter: brightness(80%);
+    scale: 105%;
+    transition: 200ms;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    
+    font-weight: 700;
+}
+
+input,
+textarea {
+    border: solid 1.5px lightblue;
+    border-radius: 7px;
+    padding: 10px 10px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: solid 1px rgb(111, 144, 155);
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    border: none;
+    outline: none;
+}
+
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.5em;
+}
+
+.submit {
+    margin-top: 10px;
+}

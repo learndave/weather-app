@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Weather Lang</title>
+    <link rel="stylesheet" href="src/css/default-base.css">
+    <link rel="stylesheet" href="src/css/default-card.css">
+    <link rel="stylesheet" href="src/css/default-form.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="main-card">
+        <div class="card-title">Temperature By Location</div>
+        <form onsubmit="return searchTemp()">
+            <label for="city-name">City</label>
+            <input type="text" name="city-name" id="city-name">
+            <button type="submit">Know My City's Temp</button>
+        </form>
+        <div class="weather-details">
+            <div class="weather-detail location">
+                
+            </div>
+            <div class='weather-detail temperature'>
+                -°C
+            </div>
+            <div class="weather-detail date">
+                -
+            </div>
+        </div>
+    </div>
+    <script src="src/js/index.js"></script>
+</body>
+</html>
